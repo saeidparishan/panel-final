@@ -1,4 +1,4 @@
 from django.db import models
 
-class Leave_request(models.Model):
+class Leave_Request(models.Model):
     pass
