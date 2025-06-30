@@ -8,7 +8,7 @@ from .models import User, Department
 
 class UserAdmin(UserAdmin):
     model = User
-    list_display = ("id","username", "role")
+    list_display = ("id","username", "role", 'department')
     list_filter = ("is_staff", "role")
     fieldsets = (
         ("Authenticate", {"fields": ("username", "password","role","department","is_staff")}),
