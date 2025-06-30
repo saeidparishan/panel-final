@@ -11,7 +11,7 @@ class UserAdmin(UserAdmin):
     list_display = ("id","username", "role")
     list_filter = ("is_staff", "role")
     fieldsets = (
-        ("Authenticate", {"fields": ("username","full_name", "password","role","department","is_verified","is_staff")}),
+        ("Authenticate", {"fields": ("username", "password","role","department","is_staff")}),
         ("Group Permissions", {"fields": ("groups", "user_permissions")}),
         ("Last login", {"fields": ("last_login",)}),
     )
@@ -31,8 +31,7 @@ class UserAdmin(UserAdmin):
             },
         ),
     )
-    search_fields = ("username","full_name")
-    ordering = ("full_name","is_verified")
+    search_fields = ("username",)
 
 
 admin.site.register(User, UserAdmin)
