@@ -4,3 +4,6 @@ from django.contrib import admin
 from hr.models import *
 
 admin.site.register(Reports) 
+admin.site.register(Advancehr)
+admin.site.register(Resume)
+admin.site.register(Define_User)
