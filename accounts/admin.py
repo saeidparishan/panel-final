@@ -33,6 +33,10 @@ class UserAdmin(UserAdmin):
     )
     search_fields = ("username",)
 
+class DepartmentAdmin(admin.ModelAdmin):
+    model = Department
+    list_display = ("id", 'department')
+
 
 admin.site.register(User, UserAdmin)
-admin.site.register(Department) 
+admin.site.register(Department, DepartmentAdmin) 

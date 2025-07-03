@@ -1,13 +1,14 @@
 venv/
 media/
 
+user_uploads/
+
 
 **/__pycache__/
 *.pyc
 
 db.sqlite3
 local_settings.py
-
 
 ### Django ###
 *.log
