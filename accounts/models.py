@@ -26,7 +26,6 @@ class User(AbstractBaseUser, PermissionsMixin):
         ('supervisor', 'سرپرست'),
         ('employee', 'کارمند'),
     )
-    
     username = models.CharField(max_length=45,unique=True)
     role = models.CharField(max_length=30, choices=ROLE_CHOICES, default='employee')
     department = models.ForeignKey(
