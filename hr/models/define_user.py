@@ -44,3 +44,4 @@ class Define_User(models.Model):
     user_role = models.CharField(max_length=30, choices=ROLE_CHOICES, default='employee')
     department = models.CharField(max_length=35, choices=DEPARTMENT_CHOICES)
     checkpoint = models.BooleanField(default=False)
+    #
