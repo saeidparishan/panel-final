@@ -1,1 +1,2 @@
-from .leave_request import Leave_Request
+from .leave_request import LeaveRequest
+from .suggestions import Suggestion
