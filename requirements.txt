@@ -2,6 +2,7 @@ asgiref==3.8.1
 Django==4.2
 django-background-tasks==1.2.8
 django-jalali==7.4.0
+django-filter==25.1
 djangorestframework==3.16.0
 djangorestframework_simplejwt==5.5.0
 drf-yasg==1.21.10
@@ -13,6 +14,7 @@ PyJWT==2.9.0
 pytz==2025.2
 PyYAML==6.0.2
 six==1.17.0
+Markdown==3.8.2
 sqlparse==0.5.3
 tzdata==2025.2
 uritemplate==4.2.0

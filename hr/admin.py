@@ -2,6 +2,8 @@ from django.contrib import admin
 
 from hr.models.leave_request import LeaveRequest
 from hr.models.suggestions import Suggestion
+# Register your models here.
+from hr.models import *
 
 
 @admin.register(LeaveRequest)
@@ -88,3 +90,8 @@ class SuggestionAdmin(admin.ModelAdmin):
     def get_queryset(self, request):
         self.request = request
         return super().get_queryset(request)
+
+admin.site.register(Reports) 
+admin.site.register(Advancehr)
+admin.site.register(Resume)
+admin.site.register(Define_User)
